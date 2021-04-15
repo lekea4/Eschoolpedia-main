@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create An Account | ESchoolPedia</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="create">
+        <div class="container">
+          <div class="close">
+            <img src="./img/close.svg" alt="" />
+          </div>
+          <div class="form">
+            <div class="logo">
+              <img
+                src="./img/Eschoolpedia-logo-side-by-side-768x181.png"
+                alt=""
+              />
+            </div>
+            <h1>Try for Free</h1>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <div class="form-control">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="ogeobubu"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              placeholder="********"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="number"
+              name="telephone"
+              id="telephone"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="school"
+              id="school"
+              placeholder="Name of School"
+            />
+          </div>
+          <input type="checkbox" name="accept" id="accept" /> I have read and
+          accept terms and conditions
+
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+      $("#telephone").intlTelInput();
+    </script>
+  </body>
+</html>
