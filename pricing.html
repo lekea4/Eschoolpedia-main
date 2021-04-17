@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/Transparent logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/features-and-pricing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/596ded0aa3.js"></script>
+    <title>Eschoolpedia</title>
+</head>
+
+<body>
+    <!-- navigation -->
+    <!-- <section class="navigation">
+        
+         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="img/logotem.jpg" alt="logo"
+                        style="width: 253px; height: 60px; margin-left: 14%;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <i class="fa fa-bars" aria-hidden="true"></i> 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"> Try for free</span>
+                    </a>
+                </span>
+            </div>
+        </nav> 
+
+       
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md mr-0" role="content">
+                <div class="modal-content popup justify-content-right">
+                    <div class="modal-body">
+                        <div class="row row-content">
+                            <div class="col-12 text-center">
+                                <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                                <p class="modal-title">Try for free</p><br>
+                                <p>Already have an account <a href="login.html" class="text-success">Login</a> </p>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="offset-1 col-md-5 col-form-label">First Name
+                                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                                placeholder="First Name">
+                                        </label>
+                                        <label class="offset-1 col-md-5 col-form-label">last Name
+                                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                                placeholder="last Name">
+                                        </label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="offset-1 col-11 col-form-label">Create Email</label>
+                                        <div class="offset-1 col-11">
+                                            <input type="text" class="form-control" id="email" name="email"
+                                                placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="username" class="offset-1 col-11 col-form-label">Create
+                                            Username</label>
+                                        <div class="offset-1 col-11">
+                                            <input type="text" class="form-control" id="username" name="username"
+                                                placeholder="Create Username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="passwordId" class="offset-1 col-11 col-form-label">Create
+                                            Password</label>
+                                        <div class="offset-1 col-11">
+                                            <input type="password" class="form-control" id="passwordId"
+                                                name="passwordId" placeholder="Create Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="confirmPassword" class="offset-1 col-11 col-form-label">Confirm
+                                            Password</label>
+                                        <div class="offset-1 col-11">
+                                            <input type="password" class="form-control" id="confirmPassword"
+                                                name="confirmPassword" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="telnum" class="offset-1 col-11 col-form-label">Phone Number</label>
+                                        <div class="offset-1 col-4">
+                                            <input type="tel" class="form-control" id="telnum" name="telnum"
+                                                placeholder="Zip Code">
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="tel" class="form-control" id="telnum" name="telnum"
+                                                placeholder="Tel. Number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="school" class="offset-1 col-11 col-form-label">Name of your
+                                            school</label>
+                                        <div class="offset-1 col-11">
+                                            <input type="text" class="form-control" id="school" name="school"
+                                                placeholder="Name of your school">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row checkbox">
+                                        <div class="offset-1 col-1">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="approve"
+                                                    id="approve" value="">
+                                            </div>
+                                        </div>
+                                        <label class="form-check-label col-10 approve" for="approve">
+                                            <strong>I have read and accepted <a href="#" class="text-success">terms and
+                                                    conditions</a></strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <button type="button" class="btn btn-success offset-1 col-11">Try for
+                                            free</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- added navbar -->
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="./img/Eschoolpedia-logo-side-by-side-768x181.png"
+                    alt="ESchoolPedia Logo" /></a>
+            <nav>
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About Us</a>
+                <a href="login.html">Login</a>
+                <!-- <a class="nav-link dropdown-toggle nav-item dropdown" href="#" id="navbarDropdownMenuLink" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Login
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div> -->
+                <div class="button">
+                    <a href="#">Try for Free <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="#">Try for Free</a>
+    </nav>
+    <!-- end of new navbar -->
+
+
+    <br><br><br><br><br>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row footer-content">
+                <div class="col-12">
+                    <h1 class="about lead text-center price">our plans</h1>
+                    <p class="aboutpad text-center">Try Eschoolpedia for 30days free. No Credit Card. No agreement
+                        needed.</p>
+                </div>
+            </div>
+            <div class="row footer-content wrapper">
+                <div class="col-12 col-sm-6 col-md">
+                    <h1 class="about lead text-center">FREE</h1>
+                    <h2 class="about text-center">#0</h2>
+                    <p class="text-center">Up to 50 numbers of students</p>
+                    <p class="text-center padding">Memories then whispered sought the the on sitting hear, a his word
+                        usby and out the the of bleak, or forget the an liftednevermore aidenn opened floor, chamber i
+                        felt before cushions you with, i quoth bends what door rare longer, syllable window i little me.
+                        Art sir bleak raven madam but hath thinking with, entreating is my ghost the there, is raven
+                        floor me that meaninglittle door, metell lenore human some i, heart token that but i upstarting
+                        no obeisance, grim darkness caught with with thing raven heard help, with the curtain raven
+                        raven a. From a vainly shrieked my that, upstarting bird relevancy once as, my me now and door
+                        hesitating late there whether i. Then in and and she grim. My its lamplight gaunt raven raven
+                        what at separate at, chamber in demons quaff whispered at whom, off straight this repeating
+                        whether here silence. Black meant of horror of implore be radiant, of the what store and opened.
+                        Days fluttered on caught burden lost the living. Now whether and let and fancy unhappy.</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success price-button">Start Free Trial</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md">
+                    <h1 class="about lead text-center">BASICS</h1>
+                    <h2 class="about text-center text-dark">#XXXXXX</h2>
+                    <p class="text-center">Unlimited numbers of students</p>
+                    <p class="text-center padding">Memories then whispered sought the the on sitting hear, a his word
+                        usby and out the the of bleak, or forget the an liftednevermore aidenn opened floor, chamber i
+                        felt before cushions you with, i quoth bends what door rare longer, syllable window i little me.
+                        Art sir bleak raven madam but hath thinking with, entreating is my ghost the there, is raven
+                        floor me that meaninglittle door, metell lenore human some i, heart token that but i upstarting
+                        no obeisance, grim darkness caught with with thing raven heard help, with the curtain raven
+                        raven a. From a vainly shrieked my that, upstarting bird relevancy once as, my me now and door
+                        hesitating late there whether i. Then in and and she grim. My its lamplight gaunt raven raven
+                        what at separate at, chamber in demons quaff whispered at whom, off straight this repeating
+                        whether here silence. Black meant of horror of implore be radiant, of the what store and opened.
+                        Days fluttered on caught burden lost the living. Now whether and let and fancy unhappy.</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success price-button">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <h1 class="about lead text-center">PRO</h1>
+                    <h2 class="about text-center ">#XXXXXX</h2>
+                    <p class="text-center">Unlimited numbers of students</p>
+                    <p class="text-center padding">Memories then whispered sought the the on sitting hear, a his word
+                        usby and out the the of bleak, or forget the an liftednevermore aidenn opened floor, chamber i
+                        felt before cushions you with, i quoth bends what door rare longer, syllable window i little me.
+                        Art sir bleak raven madam but hath thinking with, entreating is my ghost the there, is raven
+                        floor me that meaninglittle door, metell lenore human some i, heart token that but i upstarting
+                        no obeisance, grim darkness caught with with thing raven heard help, with the curtain raven
+                        raven a. From a vainly shrieked my that, upstarting bird relevancy once as, my me now and door
+                        hesitating late there whether i. Then in and and she grim. My its lamplight gaunt raven raven
+                        what at separate at, chamber in demons quaff whispered at whom, off straight this repeating
+                        whether here silence. Black meant of horror of implore be radiant, of the what store and opened.
+                        Days fluttered on caught burden lost the living. Now whether and let and fancy unhappy.</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success price-button">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grow">
+            <h2 class="lead">Start Growing with Eschoolpedia</h2>
+
+            <!-- <a href="#" class=" btn btn-primary btn-md active" role="button" aria-pressed="true"> -->
+            <button class="grow-button"><a href=""> Start Your Free Trial</a></button>
+
+
+        </div>
+
+    </section>
+
+    <section>
+        <footer class="container-fluid">
+            <div class="row footer-content">
+                <div class="footerlogo footerlinks col-md-4">
+                    <img src="img/logotem.jpg" alt="brand" width="150">
+                    <p>No 1 School Management System in Africa.</p> <br>
+                    <address>
+                        <div class="in-touch">
+                            <p>Get in touch:</p>
+                            <p> <i class="fa fa-phone" aria-hidden="true"></i> +234 1234 5678</p>
+
+                            <span class="mail"><i class="fa fa-envelope" aria-hidden="true"></i> <a
+                                    href="mailto:admin@eschoolpedia.com">admin@eschoolpedia.com</a>
+                            </span>
+                        </div>
+
+
+                    </address>
+                    <a class="btn btn-facebook" href="https://www.facebook.com/eschoolpedia/"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a class="btn btn-linkedin" href="https://www.linkedin.com/company/eschoolpedia"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="btn btn-twitter" href="https://twitter.com/eschoolpedia?s=08"> <i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a class="btn btn-instagram" href="https://instagram.com/eschoolpedia_?igshid=5h7z69ve7ykh"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></i></a>
+
+                </div>
+
+
+
+                <div class="col-md-2 footer-desc">
+                    <div class="footerlinks">
+                        <h5> <a href="#" class="headlink"> Company</a></h5>
+                        <div class="contentlink">
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">Security & Trust</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-2 footer-desc">
+                    <div class="footerlinks">
+                        <h5><a href="#" class="headlink"> Resources</a></h5>
+                        <div class="contentlink">
+                            <p><a href="#"> Help center</a> </p>
+                            <p><a href="#">Guides</a></p>
+                            <p><a href="#">Blog</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-2 footer-desc">
+                    <div class="footerlinks">
+                        <h5><a href="#" class="headlink">Product</a></h5>
+                        <div class="contentlink">
+                            <p><a href="#">Features</a> </p>
+                            <p><a href="#">Term of Use</a></p>
+                            <p><a href="#">Privacy Policy</a> </p>
+                            <p><a href="#">Pricing</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-2 footer-desc">
+                    <div class="footerlinks">
+                        <h5> <a href="#" class="headlink">eSCHOOLPEDIA FOR SCHOOLS</a></h5>
+                        <div class="contentlink">
+                            <p><a href="#">E-Competition</a></p>
+                            <p><a href="#">Online Exam Adminstration</a></p>
+                            <p><a href="#">Online Resource Center</a></p>
+                            <p><a href="#">Career Path Counselling</a></p>
+                            <p><a href="#">Student & Teacher Profiling</a></p>
+                            <p><a href="#">Payment Access</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- <div class="footerlinks">
+                <p> <a href="#" class="headlink">Pricing</a> </p>
+
+                <div class="contentlink">
+                    <p><a href="#">Product</a></p>
+                    <li><a href="#">Basic</a></li>
+                    <li><a href="#">Premium</a></li>
+                </div>
+
+             </div> -->
+
+                <div class="col-12 text-center">
+                    <h5>&copy; Eschoolpedia.com </h5>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- new added script from index -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
